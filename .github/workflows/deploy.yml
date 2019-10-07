@@ -15,6 +15,20 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        version: ${{ matrix.node_version }}
+    - name: Install + Build
+      run: |
+        yarn install
+        yarn run build --if-present
+    - name: Lint
+      run: yarn lint
+    - name: Test
+      run: yarn test
+
     - name: Deploy to Now
       run:
         yarn deploy --token ${{ secrets.NOW_TOKEN }}

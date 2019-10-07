@@ -24,8 +24,8 @@ jobs:
       run: |
         npm install
         npm run build --if-present
-#     - name: Lint
-#       run: npm lint
+    - name: Lint
+      run: npm lint
     - name: Test
       run: npm test
     - name: Deploy to Now

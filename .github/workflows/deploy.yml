@@ -31,5 +31,4 @@ jobs:
     - name: Deploy to Now
       uses: actions/zeit-now@1.0.0
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
+        ZEIT_TOKEN: ${{ secrets.NOW_TOKEN }}

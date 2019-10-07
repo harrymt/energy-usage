@@ -30,6 +30,4 @@ jobs:
       run: yarn test
     - name: Deploy to Now
       run:
-        yarn deploy
-      env:
-        ZEIT_TOKEN: ${{ secrets.NOW_TOKEN }}
+        yarn deploy --token ${{ secrets.NOW_TOKEN }}

@@ -4,7 +4,7 @@
   "description": "Track my energy usage",
   "main": "index.js",
   "scripts": {
-    "dev": "next start",
+    "dev": "next",
     "dev:verbose": "next",
     "lint": "yarn lint:check",
     "lint:check": "prettier --check \"./**/*.{ts,tsx}\"",
@@ -27,13 +27,15 @@
   },
   "homepage": "https://github.com/harrymt/energy-usage#readme",
   "dependencies": {
+    "@types/styled-components": "^4.1.19",
     "@zeit/next-sass": "^1.0.1",
     "next": "^9.0.5",
     "next-routes": "^1.4.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-ga": "^2.6.0",
-    "react-test-renderer": "^16.10.2"
+    "react-test-renderer": "^16.10.2",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",

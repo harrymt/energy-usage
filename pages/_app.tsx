@@ -9,7 +9,7 @@ export default class MyApp extends App {
       <div>
         <Head>
           <title>Energy Usage</title>
-          <link rel="manifest" href="/static/manifest.json" />
+          <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#555" />
           <meta name="description" content="content" />
         </Head>

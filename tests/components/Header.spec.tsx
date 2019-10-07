@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import HelloWorld from '../../components/HelloWorld'
+import Header from '../../components/Header'
 
-describe('HelloWorld', () => {
+describe('Header', () => {
   it('should render correctly', () => {
-    const tree = renderer.create(<HelloWorld />).toJSON()
+    const tree = renderer.create(<Header />).toJSON()
 
     expect(tree).toMatchSnapshot()
   })

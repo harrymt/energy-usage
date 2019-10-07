@@ -32,9 +32,3 @@ jobs:
       uses: actions/zeit-now@1.0.0
       env:
         ZEIT_TOKEN: ${{ secrets.NOW_TOKEN }}
-    - name: Alias
-      uses: actions/zeit-now@1.0.0
-      env:
-        ZEIT_TOKEN: ${{ secrets.NOW_TOKEN }}
-      with:
-        args: alias

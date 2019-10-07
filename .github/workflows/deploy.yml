@@ -1,10 +1,13 @@
-name: Test cross-platform
+name: Deploy
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  test:
-    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+  deploy:
+    name: Builds and deploys app
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -17,9 +20,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         version: ${{ matrix.node_version }}
-
     - name: npm install, build and test
       run: |
         npm install
         npm run build --if-present
+        npm lint
         npm test
+    - name: Deploy to Now
+      uses: actions/zeit-now@1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NOW_TOKEN: ${{ secrets.NOW_TOKEN }}

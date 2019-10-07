@@ -1,20 +1,16 @@
-# Landing page template
+# Track my energy usage
 
-Starting template with:
-- React.js
-- Next.js
-- Typescript
-- SCSS
-- Google analytics
-- SSL (via Zeit Now)
-- CI
-- CD
-- Jest tests
+Based on a starting template for React, NextJS, TypeScript: https://github.com/alepacheco/landing-template
 
-## How to use
 
-```javascript
-npm i -g now
-npm i
-npm run dev
+## Run
+
+```
+$ yarn dev # TODO: add
+```
+
+## Test
+
+```
+$ yarn test # TODO: move to yarn
 ```

@@ -8,11 +8,11 @@ Check it out: https://workspace.harrymt.now.sh
 ## Run
 
 ```
-$ yarn dev # TODO: add
+$ yarn dev
 ```
 
 ## Test
 
 ```
-$ yarn test # TODO: move to yarn
+$ yarn test
 ```

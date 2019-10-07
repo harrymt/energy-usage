@@ -1,5 +1,5 @@
-import '../css/index.scss';
-import HelloWorld from '../components/HelloWorld';
+import '../css/index.scss'
+import HelloWorld from '../components/HelloWorld'
 
 const Index = () => {
   return (
@@ -14,7 +14,7 @@ const Index = () => {
         }
       `}</style>
     </div>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index

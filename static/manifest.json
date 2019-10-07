@@ -1,9 +1,9 @@
 {
-  "name": "Landing Page",
-  "short_name": "landing page",
+  "name": "Track energy usage",
+  "short_name": "Energy usage",
   "icons": [],
   "background_color": "#FFFFFF",
-  "description": "This is a sample landing page",
+  "description": "Track energy usage",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#000"

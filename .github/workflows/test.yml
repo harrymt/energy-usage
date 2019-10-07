@@ -1,7 +1,7 @@
 name: Test
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         version: ${{ matrix.node_version }}
-    - name: yarn install and build and test
+    - name: Install + Build
       run: |
         yarn install
         yarn run build --if-present
@@ -28,6 +28,3 @@ jobs:
       run: yarn lint
     - name: Test
       run: yarn test
-    - name: Deploy to Now
-      run:
-        yarn deploy --token ${{ secrets.NOW_TOKEN }}

@@ -28,8 +28,19 @@
   },
   "homepage": "https://github.com/harrymt/energy-usage#readme",
   "dependencies": {
+    "@types/recharts": "^1.1.22",
     "@types/styled-components": "^4.1.19",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
     "@zeit/next-sass": "^1.0.1",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-cypress": "^2.7.0",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
     "next": "^9.0.5",
     "next-routes": "^1.4.2",
     "now": "^16.3.1",
@@ -37,6 +48,7 @@
     "react-dom": "^16.9.0",
     "react-ga": "^2.6.0",
     "react-test-renderer": "^16.10.2",
+    "recharts": "^1.7.1",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
@@ -51,13 +63,15 @@
     "typescript": "^3.6.3"
   },
   "prettier": {
-    "trailingComma": "es5",
+    "trailingComma": "all",
     "tabWidth": 2,
     "semi": false,
     "bracketSpacing": true,
     "jsxBracketSameLine": true,
     "arrowParens": "avoid",
-    "singleQuote": true
+    "singleQuote": true,
+    "useTabs": false,
+    "jsxSingleQuote": false
   },
   "jest": {
     "roots": [

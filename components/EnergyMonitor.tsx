@@ -11,7 +11,7 @@ const EnergyMonitor = () => {
   const meterReadings = meterReadingsData.electricity
 
   const toFriendlyDate = (date: string) => {
-    return new Date(Date.parse(date)).toLocaleDateString()
+    return new Date(Date.parse(date)).toLocaleDateString('en-GB')
   }
   const energyUsageData = []
   for (let i = 0; i < meterReadings.length - 2; i++) {

@@ -12,7 +12,6 @@
     "test": "yarn lint:fix && jest",
     "test:coverage": "jest --coverage --coverageReporters=html",
     "test:coverage:send": "jest --coverage --coverageReporters=text-lcov | coveralls",
-    "prebuild": "yarn test",
     "build": "next build",
     "deploy": "now --prod"
   },

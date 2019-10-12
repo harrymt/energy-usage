@@ -15,7 +15,7 @@ const P = styled.p`
 
 export const ContentHighlight = ({}) => (
   <Content>
-    <H2>Estimated Energy</H2>
+    <H2>How we estimate energy usage</H2>
     <P>
       blah blah bla bah blah bla bla bla bah blah bla bla bla bah blah bla bla
       bla bah blah bla bla bla bah blah bla bla bla bah blah bla bla bla bah

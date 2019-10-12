@@ -3,7 +3,7 @@ import { VictoryChart, VictoryTheme, VictoryBar, VictoryAxis } from 'victory'
 import styled from 'styled-components'
 
 const BarWrapper = styled.div`
-  width: 60%;
+  width: 100%;
   max-width: 700px;
 `
 

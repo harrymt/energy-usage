@@ -2,6 +2,7 @@ import App, { AppContext } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
+import { gutter, breakpoints } from '../components/Variables'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -11,8 +12,14 @@ const GlobalStyle = createGlobalStyle`
     color: #003366;
     font-family: -apple-system, helvetica, futura, sans-serif;
     font-size: 16px;
-    margin-left: 3vh;
-    margin-right: 3vh;
+
+    margin-left: ${gutter}%;
+    margin-right: ${gutter}%;
+
+    @media (max-width: ${breakpoints.medium}) {
+      margin-left: ${gutter}%;
+      margin-right: ${gutter}%;
+    }
   }
 `
 

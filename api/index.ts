@@ -1,6 +1,6 @@
 import Koa from 'koa';
 import KoaRouter, { RouterContext } from 'koa-router';
-import { getAllUsage, setup } from './usage-repository';
+import { getAllUsage, setup } from './src/usage-repository';
 
 const PORT = process.env.PORT || 9000;
 
@@ -31,6 +31,13 @@ export default function createServer() {
     );
     ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
     await next();
+  });
+
+
+  router.get('/', (ctx, next) => {
+    ctx.body = 'OK';
+    ctx.status = 200;
+    next();
   });
 
   router.get('/healthcheck', (ctx, next) => {

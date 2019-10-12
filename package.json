@@ -47,6 +47,7 @@
     "react-dom": "^16.9.0",
     "react-ga": "^2.6.0",
     "react-test-renderer": "^16.10.2",
+    "sqlite3": "^4.1.0",
     "styled-components": "^4.4.0",
     "victory": "^33.1.1"
   },

@@ -15,7 +15,7 @@ const EnergyMonitor = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('//localhost:9000/usage')
+      const res = await fetch('/api/usage')
       const result = await res.json()
       return result
     } catch (error) {

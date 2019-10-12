@@ -14,13 +14,14 @@ export const MeterTable = ({ data }: { data?: MeterReading[] }) => {
       </thead>
 
       <tbody>
-        {data && data.map(({ readingDate, cumulative, unit }) => (
-          <tr key={readingDate}>
-            <td>{readingDate}</td>
-            <td>{cumulative}</td>
-            <td>{unit}</td>
-          </tr>
-        ))}
+        {data &&
+          data.map(({ readingDate, cumulative, unit }) => (
+            <tr key={readingDate}>
+              <td>{readingDate}</td>
+              <td>{cumulative}</td>
+              <td>{unit}</td>
+            </tr>
+          ))}
       </tbody>
     </Table>
   )

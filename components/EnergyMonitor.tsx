@@ -6,9 +6,8 @@ import { FlexBox, FlexChild } from './Layout/Layout'
 import fetch from 'isomorphic-unfetch'
 import { MeterReading, EnergyUsage } from '../types/energy-usage'
 
-const toFriendlyDate = (date: string) => {
-  return new Date(Date.parse(date)).toLocaleDateString('en-US')
-}
+const toFriendlyDate = (date: string) =>
+  new Date(Date.parse(date)).toLocaleDateString('en-US')
 
 const EnergyMonitor = () => {
   const [energyUsageData, setEnergyUsage] = useState<EnergyUsage[]>([])
@@ -27,6 +26,7 @@ const EnergyMonitor = () => {
   useEffect(() => {
     const getData = async () => {
       const readings = await fetchData()
+      console.log(readings)
 
       const usage = []
       for (let i = 0; i < readings.length - 2; i++) {
@@ -35,24 +35,26 @@ const EnergyMonitor = () => {
         usage.push({ date, energyUsage })
       }
 
+      console.log(usage)
+
       setEnergyUsage(usage)
       setMeterReadings(readings)
     }
     getData()
   }, [])
 
-    return (
-      <FlexBox>
-        <FlexChild>
-          <H2>Estimated Usage</H2>
-          <Chart data={energyUsageData} />
-        </FlexChild>
-        <FlexChild>
-          <H2>Meter Readings</H2>
-          <MeterTable data={meterReadings} />
-        </FlexChild>
-      </FlexBox>
-    )
+  return (
+    <FlexBox>
+      <FlexChild>
+        <H2>Estimated Usage</H2>
+        <Chart data={energyUsageData} />
+      </FlexChild>
+      <FlexChild>
+        <H2>Meter Readings</H2>
+        <MeterTable data={meterReadings} />
+      </FlexChild>
+    </FlexBox>
+  )
 }
 
 export default EnergyMonitor

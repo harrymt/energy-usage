@@ -2,6 +2,7 @@ import React from 'react'
 import * as meterReadingsData from '../data/meter-readings.json'
 import { VictoryChart, VictoryTheme, VictoryBar, VictoryAxis } from 'victory'
 import styled from 'styled-components'
+
 const BarWrapper = styled.div`
   width: 60%;
   max-width: 700px;

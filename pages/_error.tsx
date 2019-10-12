@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Index from './index'
 
 class Error extends React.Component<{ statusCode: number }> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   static getInitialProps({ res, err }: any) {
     const statusCode = res ? res.statusCode : err ? err.statusCode : null
     return { statusCode }

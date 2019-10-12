@@ -33,7 +33,6 @@ export default function createServer() {
     await next();
   });
 
-
   router.get('/', (ctx, next) => {
     ctx.body = 'OK';
     ctx.status = 200;

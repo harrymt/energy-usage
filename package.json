@@ -29,6 +29,7 @@
     "@types/fetch-mock": "^7.3.1",
     "@types/koa": "^2.0.50",
     "@types/koa-router": "^7.0.42",
+    "@types/sqlite3": "^3.1.5",
     "@types/styled-components": "^4.1.19",
     "@typescript-eslint/eslint-plugin": "^2.3.3",
     "@typescript-eslint/parser": "^2.3.3",

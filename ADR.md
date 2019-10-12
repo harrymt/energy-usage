@@ -37,3 +37,6 @@ List of architecture decisions made in this project.
 - Victory charts is a library for creating charts.
 - Pro: Easy to use as comes with support for TypeScript and React components.
 - Pro: Better developer experience and easy integration for faster developer speed.
+
+
+6. Move package json api commands outta there, we should have all dependecnies in the api

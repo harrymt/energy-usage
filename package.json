@@ -27,6 +27,8 @@
   "homepage": "https://github.com/harrymt/energy-usage#readme",
   "dependencies": {
     "@types/fetch-mock": "^7.3.1",
+    "@types/koa": "^2.0.50",
+    "@types/koa-router": "^7.0.42",
     "@types/styled-components": "^4.1.19",
     "@typescript-eslint/eslint-plugin": "^2.3.3",
     "@typescript-eslint/parser": "^2.3.3",
@@ -40,6 +42,8 @@
     "eslint-plugin-react-hooks": "^2.1.2",
     "fetch-mock": "^7.5.1",
     "isomorphic-unfetch": "^3.0.0",
+    "koa": "^2.10.0",
+    "koa-router": "^7.4.0",
     "next": "^9.0.5",
     "next-routes": "^1.4.2",
     "now": "^16.3.1",

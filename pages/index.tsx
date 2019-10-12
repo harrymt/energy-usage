@@ -3,14 +3,12 @@ import Heading from '../components/Heading'
 import EnergyMonitor from '../components/EnergyMonitor'
 import ContentHighlight from '../components/ContentHighlight'
 
-const Index = () => {
-  return (
-    <>
-      <Heading />
-      <ContentHighlight />
-      <EnergyMonitor />
-    </>
-  )
-}
+const Index = () => (
+  <>
+    <Heading />
+    <ContentHighlight />
+    <EnergyMonitor />
+  </>
+)
 
 export default Index

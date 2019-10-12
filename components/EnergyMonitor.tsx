@@ -1,42 +1,58 @@
-import React from 'react'
-import * as meterReadingsData from '../data/meter-readings.json'
+import React, { useState, useEffect } from 'react'
 import Chart from './Chart'
 import MeterTable from './MeterTable'
 import { H2 } from './Layout/Typography'
-import { EnergyUsage } from '../types/energy-usage'
 import { FlexBox, FlexChild } from './Layout/Layout'
+import fetch from 'isomorphic-unfetch'
+import { MeterReading, EnergyUsage } from '../types/energy-usage'
+
+const toFriendlyDate = (date: string) => {
+  return new Date(Date.parse(date)).toLocaleDateString('en-US')
+}
 
 const EnergyMonitor = () => {
-  const meterReadings = meterReadingsData.electricity
+  const [energyUsageData, setEnergyUsage] = useState<EnergyUsage[]>([])
+  const [meterReadings, setMeterReadings] = useState<MeterReading[]>()
 
-  const toFriendlyDate = (date: string) => {
-    return new Date(Date.parse(date)).toLocaleDateString('en-US')
+  const fetchData = async () => {
+    try {
+      const res = await fetch('//localhost:9000/usage')
+      const result = await res.json()
+      return result
+    } catch (error) {
+      console.log(error)
+      return []
+    }
   }
-  const energyUsageData: EnergyUsage[] = []
-  for (let i = 0; i < meterReadings.length - 2; i++) {
-    const energyUsage =
-      meterReadings[i + 1].cumulative - meterReadings[i].cumulative
-    energyUsageData.push({
-      date: toFriendlyDate(meterReadings[i + 1].readingDate),
-      energyUsage,
-    })
-  }
+  useEffect(() => {
+    const getData = async () => {
+      const readings = await fetchData()
 
-  console.log(energyUsageData)
-  console.log(meterReadings)
+      const usage = []
+      for (let i = 0; i < readings.length - 2; i++) {
+        const date = toFriendlyDate(readings[i + 1].readingDate)
+        const energyUsage = readings[i + 1].cumulative - readings[i].cumulative
+        usage.push({ date, energyUsage })
+      }
 
-  return (
-    <FlexBox>
-      <FlexChild>
-        <H2>Estimated Usage</H2>
-        <Chart data={energyUsageData} />
-      </FlexChild>
-      <FlexChild>
-        <H2>Meter Readings</H2>
-        <MeterTable data={meterReadings} />
-      </FlexChild>
-    </FlexBox>
-  )
+      setEnergyUsage(usage)
+      setMeterReadings(readings)
+    }
+    getData()
+  }, [])
+
+    return (
+      <FlexBox>
+        <FlexChild>
+          <H2>Estimated Usage</H2>
+          <Chart data={energyUsageData} />
+        </FlexChild>
+        <FlexChild>
+          <H2>Meter Readings</H2>
+          <MeterTable data={meterReadings} />
+        </FlexChild>
+      </FlexBox>
+    )
 }
 
 export default EnergyMonitor

@@ -35,6 +35,9 @@ module.exports = {
     },
   },
   rules: {
+    "camelcase": "off",
+    "@typescript-eslint/camelcase": ["error", { "properties": "never" }],
+    'ignoreDestructuring': true,
     'no-unused-expressions': [
       'warn',
       {

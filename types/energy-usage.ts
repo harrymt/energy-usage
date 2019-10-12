@@ -1,8 +1,10 @@
-// TODO don't use this type for both
 export interface EnergyUsage {
   date?: string
   energyUsage?: number
-  cumulative?: number
-  readingDate?: string
+}
+
+export interface MeterReading {
+  cumulative: number
+  readingDate: string
   unit?: string
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Table } from './Layout/Layout'
-import { EnergyUsage } from '../types/energy-usage'
+import { MeterReading } from '../types/energy-usage'
 
-export const MeterTable = ({ data }: { data: EnergyUsage[] }) => {
+export const MeterTable = ({ data }: { data?: MeterReading[] }) => {
   return (
     <Table>
       <thead>
@@ -14,7 +14,7 @@ export const MeterTable = ({ data }: { data: EnergyUsage[] }) => {
       </thead>
 
       <tbody>
-        {data.map(({ readingDate, cumulative, unit }) => (
+        {data && data.map(({ readingDate, cumulative, unit }) => (
           <tr key={readingDate}>
             <td>{readingDate}</td>
             <td>{cumulative}</td>

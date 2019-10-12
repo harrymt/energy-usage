@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "watch": ["src"],
+  "ext": "ts",
+  "ignore": ["src/**/*.{spec,test}.ts"],
+  "exec": "ts-node src/index.ts",
+  "verbose": true
+}

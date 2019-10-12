@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export default class MyApp extends App {
+class MyApp extends App {
   static async getInitialProps(props: AppContext) {
     const { Component, ctx } = props
 
@@ -49,3 +49,5 @@ export default class MyApp extends App {
     )
   }
 }
+
+export default MyApp

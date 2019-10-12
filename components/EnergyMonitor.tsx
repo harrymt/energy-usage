@@ -1,6 +1,23 @@
 import React from 'react'
 import * as meterReadingsData from '../data/meter-readings.json'
 import Chart from './Chart'
+import { H2 } from './Typography'
+import styled from 'styled-components'
+
+const Table = styled.table`
+  color: rgb(0, 51, 102);
+  text-align: left;
+  width: 100%;
+
+  thead {
+    background: rgb(242, 242, 242);
+  }
+
+  th,
+  td {
+    padding: 1rem;
+  }
+`
 
 const EnergyMonitor = () => {
   const meterReadings = meterReadingsData.electricity
@@ -30,17 +47,18 @@ const EnergyMonitor = () => {
   return (
     <>
       <Chart data={energyUsageData} />
-      <h2>Meter Readings</h2>
-      <table>
-        <tbody>
+      <H2>Meter Readings</H2>
+      <Table>
+        <thead>
           <tr>
             <th>Date</th>
             <th>Reading</th>
             <th>Unit</th>
           </tr>
-          {meterReadingsRows}
-        </tbody>
-      </table>
+        </thead>
+
+        <tbody>{meterReadingsRows}</tbody>
+      </Table>
     </>
   )
 }

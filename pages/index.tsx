@@ -1,11 +1,13 @@
 import React from 'react'
-import Header from '../components/Header'
+import Heading from '../components/Heading'
 import EnergyMonitor from '../components/EnergyMonitor'
+import ContentHighlight from '../components/ContentHighlight'
 
 const Index = () => {
   return (
     <>
-      <Header />
+      <Heading />
+      <ContentHighlight />
       <EnergyMonitor />
     </>
   )

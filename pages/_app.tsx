@@ -5,12 +5,14 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    margin-top: 10vh;
-    font-family: monospace;
-    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
 
-    background-color: #efefef;
     color: #003366;
+    font-family: -apple-system, helvetica, futura, sans-serif;
+    font-size: 16px;
+    margin-left: 3vh;
+    margin-right: 3vh;
   }
 `
 

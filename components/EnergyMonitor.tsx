@@ -1,33 +1,10 @@
 import React from 'react'
 import * as meterReadingsData from '../data/meter-readings.json'
 import Chart from './Chart'
-import styled from 'styled-components'
-import { breakpoints } from './Variables'
 import MeterTable from './MeterTable'
-import { H2 } from './Typography'
-
-const FlexBox = styled.div`
-  display: flex;
-
-  @media (max-width: ${breakpoints.medium}) {
-    flex-direction: column;
-  }
-`
-
-const FlexChild = styled.div`
-  padding-top: 7vh;
-  flex-direction: column;
-  width: 100%;
-`
-
-// TODO don't use this type for both
-export interface EnergyUsage {
-  date?: string
-  energyUsage?: number
-  cumulative?: number
-  readingDate?: string
-  unit?: string
-}
+import { H2 } from './Layout/Typography'
+import { EnergyUsage } from '../types/energy-usage'
+import { FlexBox, FlexChild } from './Layout/Layout'
 
 const EnergyMonitor = () => {
   const meterReadings = meterReadingsData.electricity

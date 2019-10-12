@@ -1,16 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H2, StyledLink } from './Typography'
+import { H2, StyledLink, P } from './Layout/Typography'
 
 const Content = styled.section`
   background: rgb(242, 242, 242);
   border-radius: 0.3rem;
   padding: 1.5rem;
   max-width: 750px;
-`
-
-const P = styled.p`
-  font-size: 20px;
 `
 
 export const ContentHighlight = ({}) => (

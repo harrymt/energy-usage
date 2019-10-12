@@ -2,7 +2,7 @@ import App, { AppContext } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
-import { gutter, breakpoints } from '../components/Variables'
+import { gutter, breakpoints } from '../components/Layout/Variables'
 
 const GlobalStyle = createGlobalStyle`
   body {

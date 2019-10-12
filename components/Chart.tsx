@@ -2,7 +2,7 @@ import React from 'react'
 import { VictoryChart, VictoryTheme, VictoryBar, VictoryAxis } from 'victory'
 import styled from 'styled-components'
 
-const BarWrapper = styled.div`
+const ChartContainer = styled.div`
   width: 100%;
   max-width: 700px;
 `
@@ -14,7 +14,7 @@ interface ChartProps {
 
 export const Chart = ({ data }: ChartProps) => {
   return (
-    <BarWrapper>
+    <ChartContainer>
       <VictoryChart
         theme={VictoryTheme.material}
         domainPadding={{ x: 20, y: 20 }}>
@@ -41,7 +41,7 @@ export const Chart = ({ data }: ChartProps) => {
           }}
         />
       </VictoryChart>
-    </BarWrapper>
+    </ChartContainer>
   )
 }
 

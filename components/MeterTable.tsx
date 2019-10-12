@@ -1,21 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import { EnergyUsage } from './EnergyMonitor'
-
-const Table = styled.table`
-  color: rgb(0, 51, 102);
-  text-align: left;
-  width: 100%;
-
-  thead {
-    background: rgb(242, 242, 242);
-  }
-
-  th,
-  td {
-    padding: 1rem;
-  }
-`
+import { Table } from './Layout/Layout'
+import { EnergyUsage } from '../types/energy-usage'
 
 export const MeterTable = ({ data }: { data: EnergyUsage[] }) => {
   return (
@@ -29,11 +14,11 @@ export const MeterTable = ({ data }: { data: EnergyUsage[] }) => {
       </thead>
 
       <tbody>
-        {data.map(reading => (
-          <tr key={reading.readingDate}>
-            <td>{reading.readingDate}</td>
-            <td>{reading.cumulative}</td>
-            <td>{reading.unit}</td>
+        {data.map(({ readingDate, cumulative, unit }) => (
+          <tr key={readingDate}>
+            <td>{readingDate}</td>
+            <td>{cumulative}</td>
+            <td>{unit}</td>
           </tr>
         ))}
       </tbody>

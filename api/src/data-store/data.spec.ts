@@ -1,16 +1,12 @@
 import * as database from './data';
 import { expect } from 'chai';
 import seedData from './mock-data.json';
+import { setup } from '../usage-repository';
 
 describe('data', () => {
   afterEach(() => {
     database.deleteAllTables()
   })
-
-  const setupDatabase = () => {
-    database.createTables();
-    database.seedData()
-  }
 
   it('initialize should create the database schema without errors', done => {
     database.createTables();
@@ -28,7 +24,7 @@ describe('data', () => {
   });
 
   it('seed data should import the data from the seedData file', done => {
-    setupDatabase()
+    setup()
 
     database.connection.serialize(() => {
       database.connection.all(
@@ -48,7 +44,7 @@ describe('data', () => {
   });
 
   it('select all data should return a promise to all rows', done => {
-    setupDatabase()
+    setup()
 
     const { electricity } = seedData
     database.connection.serialize(async () => {

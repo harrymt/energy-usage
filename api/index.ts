@@ -22,7 +22,7 @@ export default function createServer() {
 
   const router = new KoaRouter();
 
-  // Allow CORs
+  // Allow CORS
   server.use(async (ctx, next) => {
     ctx.set('Access-Control-Allow-Origin', '*');
     ctx.set(
@@ -33,21 +33,34 @@ export default function createServer() {
     await next();
   });
 
+  // Debug endpoint
   router.get('/', (ctx, next) => {
-    ctx.body = 'OK';
+    ctx.body = { "status": 200 };
     ctx.status = 200;
+    ctx.req.headers['content-type'] = 'application/json'
     next();
   });
 
   router.get('/healthcheck', (ctx, next) => {
-    ctx.body = 'OK';
+    ctx.body = { "status": 200 };
     ctx.status = 200;
+    ctx.req.headers['content-type'] = 'application/json'
     next();
   });
 
   router.get('/usage', async (ctx, next) => {
-    const data = await getAllUsage();
-    ctx.body = data;
+    try {
+      const data = await getAllUsage();
+      ctx.body = data;
+
+      ctx.req.headers['content-type'] = 'application/json'
+      ctx.status = 200
+
+    } catch (e) {
+      ctx.body = { "status": 500, "reason": JSON.stringify(e.message) }
+      ctx.status = 500
+    }
+
     next();
   });
 

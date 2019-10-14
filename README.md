@@ -2,15 +2,14 @@
 
 Graph to show my next energy usage based on estimated usage.
 
-Based on a starting template for React, NextJS, TypeScript: https://github.com/alepacheco/landing-template
-
-I added a GitHub action to build/test/lint the project and will deploy it to Now.sh if everything passes!
-Check it out: https://energy-usage.harrymt.now.sh/
-
 
 ## Run
 
 ```
+$ yarn dev
+
+# Open a new terminal in the /api directory
+
 $ yarn dev
 ```
 
@@ -18,4 +17,28 @@ $ yarn dev
 
 ```
 $ yarn test
+
+# Open a new terminal in the /api directory
+
+$ yarn test
 ```
+
+## Deploy
+
+Deploys both frontend and api.
+
+```
+$ yarn deploy
+
+# If this is the first deploy, you must provide login details for
+# www.now.sh
+```
+
+#### GitHub Action
+
+I added a GitHub action to build/test/lint the project and will deploy it to Now.sh if everything passes!
+Check it out: https://energy-usage.harrymt.now.sh/
+
+
+
+Based on a starting template for React, NextJS, TypeScript: https://github.com/alepacheco/landing-template

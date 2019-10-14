@@ -2,7 +2,7 @@ import Koa from 'koa';
 import KoaRouter, { RouterContext } from 'koa-router';
 import { getAllUsage, setup } from './usage-repository';
 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9001;
 
 const errorHandlingMiddleware = async (
   ctx: RouterContext,

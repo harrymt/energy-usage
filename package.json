@@ -4,7 +4,7 @@
   "description": "Track my energy usage",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "API=http://localhost:9000 next",
     "lint": "yarn lint:check",
     "lint:check": "prettier --check \"./**/*.{ts,tsx}\"",
     "lint:fix": "prettier --write \"./**/*.{ts,tsx}\"",

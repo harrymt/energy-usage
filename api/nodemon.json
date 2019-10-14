@@ -3,6 +3,6 @@
   "watch": ["src"],
   "ext": "ts",
   "ignore": ["src/**/*.{spec,test}.ts"],
-  "exec": "ts-node src/index.ts",
+  "exec": "ts-node index.ts",
   "verbose": true
 }

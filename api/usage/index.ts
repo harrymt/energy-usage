@@ -1,6 +1,6 @@
 import Koa from 'koa';
 import KoaRouter, { RouterContext } from 'koa-router';
-import { getAllUsage, setup } from './src/usage-repository';
+import { getAllUsage, setup } from './usage-repository';
 
 const PORT = process.env.PORT || 9000;
 
@@ -35,16 +35,16 @@ export default function createServer() {
 
   // Debug endpoint
   router.get('/', (ctx, next) => {
-    ctx.body = { "status": 200 };
+    ctx.body = { status: 200 };
     ctx.status = 200;
-    ctx.req.headers['content-type'] = 'application/json'
+    ctx.req.headers['content-type'] = 'application/json';
     next();
   });
 
   router.get('/healthcheck', (ctx, next) => {
-    ctx.body = { "status": 200 };
+    ctx.body = { status: 200 };
     ctx.status = 200;
-    ctx.req.headers['content-type'] = 'application/json'
+    ctx.req.headers['content-type'] = 'application/json';
     next();
   });
 
@@ -53,12 +53,11 @@ export default function createServer() {
       const data = await getAllUsage();
       ctx.body = data;
 
-      ctx.req.headers['content-type'] = 'application/json'
-      ctx.status = 200
-
+      ctx.req.headers['content-type'] = 'application/json';
+      ctx.status = 200;
     } catch (e) {
-      ctx.body = { "status": 500, "reason": JSON.stringify(e.message) }
-      ctx.status = 500
+      ctx.body = { status: 500, reason: JSON.stringify(e.message) };
+      ctx.status = 500;
     }
 
     next();

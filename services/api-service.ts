@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import { MeterReading } from '../types/energy-usage'
 
-const endpoint = process.env.API || "http://localhost:9000"
+const endpoint = process.env.API || 'http://localhost:9000'
 
 export const getUsage = async (): Promise<MeterReading[]> => {
   try {

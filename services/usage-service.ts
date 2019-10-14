@@ -1,7 +1,7 @@
-import { MeterReading } from "../types/energy-usage"
+import { MeterReading } from '../types/energy-usage'
 
 const toFriendlyDate = (date: string) =>
-new Date(Date.parse(date)).toLocaleDateString('en-US')
+  new Date(Date.parse(date)).toLocaleDateString('en-US')
 
 export const calculateUsage = (readings: MeterReading[]) => {
   const usage = []

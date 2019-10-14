@@ -1,21 +1,44 @@
-import * as data from './data';
+import * as database from './data';
 import { expect } from 'chai';
-import sampleData from './mock-data.json';
+import seedData from './mock-data.json';
 
 describe('data', () => {
-  it('initialize should import the data from the sampleData file', done => {
-    data.createTables();
-    data.seedData();
+  afterEach(() => {
+    database.deleteAllTables()
+  })
 
-    data.connection.serialize(() => {
-      data.connection.all(
-        'SELECT * FROM meter_reads ORDER BY cumulative',
+  const setupDatabase = () => {
+    database.createTables();
+    database.seedData()
+  }
+
+  it('initialize should create the database schema without errors', done => {
+    database.createTables();
+
+    database.connection.serialize(() => {
+      database.connection.all(
+        `SELECT * FROM ${database.TABLE}`,
         (error, selectResult) => {
           expect(error).to.equal(null);
-          expect(selectResult).to.have.length(sampleData.electricity.length);
+          expect(selectResult).to.have.length(0)
+          done();
+        }
+      );
+    });
+  });
+
+  it('seed data should import the data from the seedData file', done => {
+    setupDatabase()
+
+    database.connection.serialize(() => {
+      database.connection.all(
+        `SELECT * FROM ${database.TABLE} ORDER BY cumulative`,
+        (error, selectResult) => {
+          expect(error).to.equal(null);
+          expect(selectResult).to.have.length(seedData.electricity.length);
           selectResult.forEach((row, index) => {
             expect(row.cumulative).to.equal(
-              sampleData.electricity[index].cumulative
+              seedData.electricity[index].cumulative
             );
           });
           done();
@@ -23,4 +46,15 @@ describe('data', () => {
       );
     });
   });
+
+  it('select all data should return a promise to all rows', done => {
+    setupDatabase()
+
+    const { electricity } = seedData
+    database.connection.serialize(async () => {
+      const data = await database.selectAll(`SELECT * FROM ${database.TABLE}`) as any[];
+      expect(data).to.have.length(electricity.length);
+      done()
+    });
+  })
 });

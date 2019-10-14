@@ -14,6 +14,14 @@ export const createTables = () => {
   });
 };
 
+export const deleteAllTables = () => {
+  connection.serialize(() => {
+    connection.run(
+      `DROP TABLE ${TABLE}`
+    );
+  });
+}
+
 export const seedData = () => {
   connection.serialize(() => {
     const { electricity } = mockData;

@@ -7,25 +7,15 @@ Graph to show my next energy usage based on estimated usage.
 
 ```bash
 $ yarn dev
-
-# Open a new terminal in the /api directory
-
-$ yarn dev
 ```
 
 ## Test
 
 ```bash
 $ yarn test
-
-# Open a new terminal in the /api directory
-
-$ yarn test
 ```
 
 ## Deploy
-
-Deploys both frontend and api.
 
 ```bash
 $ yarn deploy

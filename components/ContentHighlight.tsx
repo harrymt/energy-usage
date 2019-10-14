@@ -28,10 +28,10 @@ export const ContentHighlight = ({}) => (
       when we are fetching data from APIs.
     </P>
     <P>
-      Talking of APIs, the second part of this application is the backend Koa
-      powered data API. This provides the meter readings you are viewing on
-      screen! I am only mocking it for now as I sadly don't have real data, as
-      of yet!
+      Talking of APIs, the second part of this application is the backend
+      Next.js powered data API. This provides the meter readings you are viewing
+      on screen! I am only mocking it for now as I sadly don't have real data,
+      as of yet!
     </P>
   </Content>
 )

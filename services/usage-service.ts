@@ -1,26 +1,39 @@
 import { MeterReading } from '../types/energy-usage'
 
-export const toFriendlyDate = (date: string): string => {
+export const toFriendlyDateFromString = (date: string): string => {
   const newDate = new Date(Date.parse(date))
-  const m = newDate.getMonth()
-  return `${m < 10 ? `0${m}` : m}/${newDate.getFullYear()}`
+  return toFriendlyDate(newDate)
+}
+
+export const toFriendlyDate = (date: Date): string => {
+  const clone = new Date(date)
+  const m = clone.getMonth()
+  return `${m < 10 ? `0${m}` : m}/${clone.getFullYear()}`
+}
+
+
+const nextMonth = (today: Date) => {
+  const clone = new Date(today)
+  return new Date(clone.setMonth(clone.getMonth() + 1))
 }
 
 export const calculateUsage = (readings: MeterReading[]) => {
   const usage = []
-  const nextMonth = (today: string) => {
-    const date = new Date(Date.parse(today))
-    return `${date.getMonth() + 1}/${date.getDay()}/${date.getFullYear()}`
-  }
-  let lastDate = new Date(Date.now()).toDateString()
 
-  for (let i = 0; i < readings.length - 2; i++) {
-    const date = toFriendlyDate(readings[i + 1].readingDate)
+
+  let i = 0
+  for (; i < readings.length - 1; i++) {
+    const date = toFriendlyDateFromString(readings[i + 1].readingDate)
     const energyUsage = readings[i + 1].cumulative - readings[i].cumulative
     usage.push({ date, energyUsage })
-
-    lastDate = readings[i + 1].readingDate
   }
+
+  // Add last date
+  const lastDate = readings[i].readingDate
+  usage.push({
+    date: toFriendlyDateFromString(lastDate),
+    energyUsage: readings[i].cumulative - readings[i - 1].cumulative
+  })
 
   let difference = 0
   let amount = 1
@@ -29,11 +42,15 @@ export const calculateUsage = (readings: MeterReading[]) => {
     amount++
   }
 
+
   usage.push({
     energyUsage: Math.floor(difference / amount),
-    date: toFriendlyDate(nextMonth(lastDate)),
+    // TODO fixed these reference error
+    date: toFriendlyDate(nextMonth(new Date(Date.parse(lastDate)))),
     label: 'Next month'
   })
+
+  console.log(usage)
 
   return usage
 }

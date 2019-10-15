@@ -22,10 +22,11 @@ export const ContentHighlight = ({}) => (
       too! Technically speaking there are two parts to this magic.
     </P>
     <P>
-      The first is a web application front end, however, I'm using <StyledLink href="https://nextjs.org/docs">Next.js</StyledLink>,
-      another JavaScript library to provide Server-Side rendering! This means
-      the pages are pretty fast loading and we rarely see flashes of content
-      when we are fetching data from APIs.
+      The first is a web application front end, however, I'm using{' '}
+      <StyledLink href="https://nextjs.org/docs">Next.js</StyledLink>, another
+      JavaScript library to provide Server-Side rendering! This means the pages
+      are pretty fast loading and we rarely see flashes of content when we are
+      fetching data from APIs.
     </P>
     <P>
       Talking of APIs, the second part of this application is the backend

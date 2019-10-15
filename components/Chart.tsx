@@ -1,5 +1,5 @@
 import React from 'react'
-import { VictoryChart, VictoryTheme, VictoryBar, VictoryAxis } from 'victory'
+import { VictoryChart, VictoryBar, VictoryAxis } from 'victory'
 import styled from 'styled-components'
 
 const ChartContainer = styled.div`
@@ -16,7 +16,6 @@ export const Chart = ({ data }: ChartProps) => {
   return (
     <ChartContainer>
       <VictoryChart
-        theme={VictoryTheme.material}
         domainPadding={{ x: 20, y: 20 }}>
         <VictoryBar
           barRatio={0.7}

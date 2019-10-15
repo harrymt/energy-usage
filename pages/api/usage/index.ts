@@ -13,7 +13,7 @@ export default async function handle(
   }
 
   try {
-    const data = await getAllUsage()
+    const data = getAllUsage()
     res.setHeader('content-type', 'application/json')
     res.status(200).json(data)
   } catch (e) {

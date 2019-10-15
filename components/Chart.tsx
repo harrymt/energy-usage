@@ -15,21 +15,20 @@ interface ChartProps {
 export const Chart = ({ data }: ChartProps) => {
   return (
     <ChartContainer>
-      <VictoryChart
-        domainPadding={{ x: 20, y: 20 }}>
+      <VictoryChart horizontal
+        domainPadding={{ x: 20, y: 20 }}
+        animate={{
+          duration: 100,
+          onLoad: { duration: 100 },
+        }}>
         <VictoryBar
-          barRatio={0.7}
+          barRatio={0.75}
           style={{
             data: { fill: '#E4228E' },
           }}
           x={'date'}
           y={'energyUsage'}
           data={data}
-          animate={{
-            duration: 2000,
-            onLoad: { duration: 1000 },
-          }}
-          horizontal={true}
         />
         <VictoryAxis />
         <VictoryAxis

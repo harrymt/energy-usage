@@ -11,7 +11,6 @@ export const toFriendlyDate = (date: Date): string => {
   return `${m < 10 ? `0${m}` : m}/${clone.getFullYear()}`
 }
 
-
 const nextMonth = (today: Date) => {
   const clone = new Date(today)
   return new Date(clone.setMonth(clone.getMonth() + 1))
@@ -19,7 +18,6 @@ const nextMonth = (today: Date) => {
 
 export const calculateUsage = (readings: MeterReading[]) => {
   const usage = []
-
 
   let i = 0
   for (; i < readings.length - 1; i++) {
@@ -32,7 +30,7 @@ export const calculateUsage = (readings: MeterReading[]) => {
   const lastDate = readings[i].readingDate
   usage.push({
     date: toFriendlyDateFromString(lastDate),
-    energyUsage: readings[i].cumulative - readings[i - 1].cumulative
+    energyUsage: readings[i].cumulative - readings[i - 1].cumulative,
   })
 
   let difference = 0
@@ -42,12 +40,11 @@ export const calculateUsage = (readings: MeterReading[]) => {
     amount++
   }
 
-
   usage.push({
     energyUsage: Math.floor(difference / amount),
     // TODO fixed these reference error
     date: toFriendlyDate(nextMonth(new Date(Date.parse(lastDate)))),
-    label: 'Next month'
+    label: 'Next month',
   })
 
   console.log(usage)

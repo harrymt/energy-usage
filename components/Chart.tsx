@@ -15,7 +15,8 @@ interface ChartProps {
 export const Chart = ({ data }: ChartProps) => {
   return (
     <ChartContainer>
-      <VictoryChart horizontal
+      <VictoryChart
+        horizontal
         domainPadding={{ x: 20, y: 20 }}
         animate={{
           duration: 100,

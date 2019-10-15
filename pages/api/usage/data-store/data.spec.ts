@@ -20,7 +20,7 @@ describe('data', () => {
     })
   })
 
-  it.only('seed data should import the data from the seedData file', done => {
+  it('seed data should import the data from the seedData file', done => {
     setup()
     const allSql = database.connection.prepare(
       `SELECT * FROM ${database.TABLE} ORDER BY cumulative`,

@@ -18,7 +18,7 @@ describe('data', () => {
       const selectResult = allSql.all()
       expect(selectResult).to.have.length(0)
     })
-  
+
     done()
   })
 

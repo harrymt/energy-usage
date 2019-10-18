@@ -29,7 +29,7 @@ exports[`EnergyMonitor should render correctly 1`] = `
         }
       >
         <svg
-          height={350}
+          height={300}
           role="img"
           style={
             Object {
@@ -38,8 +38,8 @@ exports[`EnergyMonitor should render correctly 1`] = `
               "width": "100%",
             }
           }
-          viewBox="0 0 350 350"
-          width={350}
+          viewBox="0 0 450 300"
+          width={450}
         >
           <g
             role="presentation"
@@ -53,82 +53,43 @@ exports[`EnergyMonitor should render correctly 1`] = `
               style={
                 Object {
                   "fill": "transparent",
-                  "stroke": "#90A4AE",
+                  "stroke": "#252525",
                   "strokeLinecap": "round",
                   "strokeLinejoin": "round",
-                  "strokeWidth": 2,
+                  "strokeWidth": 1,
                 }
               }
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={50}
               y1={50}
-              y2={300}
+              y2={250}
             />
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={300}
-                y1={253.97643593519882}
-                y2={253.97643593519882}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={45}
-                y1={253.97643593519882}
-                y2={253.97643593519882}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={4.26}
+                dy={4.97}
                 id="chart-axis-1-tickLabels-0"
-                x={37}
-                y={253.97643593519882}
+                x={39}
+                y={213.96396396396398}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="end"
-                  x={37}
+                  x={39}
                 >
                   0.2
                 </tspan>
@@ -137,67 +98,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={300}
-                y1={207.95287187039764}
-                y2={207.95287187039764}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={45}
-                y1={207.95287187039764}
-                y2={207.95287187039764}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={4.26}
+                dy={4.97}
                 id="chart-axis-1-tickLabels-1"
-                x={37}
-                y={207.95287187039764}
+                x={39}
+                y={177.92792792792793}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="end"
-                  x={37}
+                  x={39}
                 >
                   0.4
                 </tspan>
@@ -206,67 +128,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={300}
-                y1={161.9293078055965}
-                y2={161.9293078055965}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={45}
-                y1={161.9293078055965}
-                y2={161.9293078055965}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={4.26}
+                dy={4.97}
                 id="chart-axis-1-tickLabels-2"
-                x={37}
-                y={161.9293078055965}
+                x={39}
+                y={141.8918918918919}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="end"
-                  x={37}
+                  x={39}
                 >
                   0.6
                 </tspan>
@@ -275,67 +158,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={300}
-                y1={115.90574374079529}
-                y2={115.90574374079529}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={45}
-                y1={115.90574374079529}
-                y2={115.90574374079529}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={4.26}
+                dy={4.97}
                 id="chart-axis-1-tickLabels-3"
-                x={37}
-                y={115.90574374079529}
+                x={39}
+                y={105.85585585585585}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="end"
-                  x={37}
+                  x={39}
                 >
                   0.8
                 </tspan>
@@ -344,67 +188,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={300}
-                y1={69.88217967599411}
-                y2={69.88217967599411}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={50}
-                x2={45}
-                y1={69.88217967599411}
-                y2={69.88217967599411}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={4.26}
+                dy={4.97}
                 id="chart-axis-1-tickLabels-4"
-                x={37}
-                y={69.88217967599411}
+                x={39}
+                y={69.81981981981983}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="end"
-                  x={37}
+                  x={39}
                 >
                   1.0
                 </tspan>
@@ -420,42 +225,41 @@ exports[`EnergyMonitor should render correctly 1`] = `
               style={
                 Object {
                   "fill": "transparent",
-                  "stroke": "#90A4AE",
+                  "stroke": "#252525",
                   "strokeLinecap": "round",
                   "strokeLinejoin": "round",
-                  "strokeWidth": 2,
+                  "strokeWidth": 1,
                 }
               }
               vectorEffect="non-scaling-stroke"
               x1={50}
-              x2={300}
-              y1={300}
-              y2={300}
+              x2={400}
+              y1={250}
+              y2={250}
             />
             <text
               direction="inherit"
               dx={0}
-              dy={10.26}
+              dy={11.969999999999999}
               id="chart-axis-2-axisLabel-0"
-              x={175}
-              y={335}
+              x={225}
+              y={285}
             >
               <tspan
                 dx={0}
                 style={
                   Object {
-                    "fill": "#455A64",
-                    "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                    "fontSize": 12,
+                    "fill": "#252525",
+                    "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                    "fontSize": 14,
                     "letterSpacing": "normal",
                     "padding": 35,
                     "stroke": "transparent",
-                    "strokeWidth": 0,
                     "textAnchor": "middle",
                   }
                 }
                 textAnchor="middle"
-                x={175}
+                x={225}
               >
                 Usage (kWh)
               </tspan>
@@ -463,67 +267,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={96.02356406480118}
-                x2={96.02356406480118}
-                y1={300}
-                y2={50}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={96.02356406480118}
-                x2={96.02356406480118}
-                y1={300}
-                y2={305}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={10.26}
+                dy={11.969999999999999}
                 id="chart-axis-2-tickLabels-0"
-                x={96.02356406480118}
-                y={313}
+                x={116.01231716705158}
+                y={261}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="middle"
-                  x={96.02356406480118}
+                  x={116.01231716705158}
                 >
                   0.2
                 </tspan>
@@ -532,67 +297,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={142.04712812960236}
-                x2={142.04712812960236}
-                y1={300}
-                y2={50}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={142.04712812960236}
-                x2={142.04712812960236}
-                y1={300}
-                y2={305}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={10.26}
+                dy={11.969999999999999}
                 id="chart-axis-2-tickLabels-1"
-                x={142.04712812960236}
-                y={313}
+                x={182.02463433410315}
+                y={261}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="middle"
-                  x={142.04712812960236}
+                  x={182.02463433410315}
                 >
                   0.4
                 </tspan>
@@ -601,67 +327,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={188.0706921944035}
-                x2={188.0706921944035}
-                y1={300}
-                y2={50}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={188.0706921944035}
-                x2={188.0706921944035}
-                y1={300}
-                y2={305}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={10.26}
+                dy={11.969999999999999}
                 id="chart-axis-2-tickLabels-2"
-                x={188.0706921944035}
-                y={313}
+                x={248.0369515011547}
+                y={261}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="middle"
-                  x={188.0706921944035}
+                  x={248.0369515011547}
                 >
                   0.6
                 </tspan>
@@ -670,67 +357,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={234.0942562592047}
-                x2={234.0942562592047}
-                y1={300}
-                y2={50}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={234.0942562592047}
-                x2={234.0942562592047}
-                y1={300}
-                y2={305}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={10.26}
+                dy={11.969999999999999}
                 id="chart-axis-2-tickLabels-3"
-                x={234.0942562592047}
-                y={313}
+                x={314.0492686682063}
+                y={261}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="middle"
-                  x={234.0942562592047}
+                  x={314.0492686682063}
                 >
                   0.8
                 </tspan>
@@ -739,67 +387,28 @@ exports[`EnergyMonitor should render correctly 1`] = `
             <g
               role="presentation"
             >
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "none",
-                    "pointerEvents": "painted",
-                    "stroke": "#ECEFF1",
-                    "strokeDasharray": "10, 5",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={280.1178203240059}
-                x2={280.1178203240059}
-                y1={300}
-                y2={50}
-              />
-              <line
-                role="presentation"
-                shapeRendering="auto"
-                style={
-                  Object {
-                    "fill": "transparent",
-                    "size": 5,
-                    "stroke": "#90A4AE",
-                    "strokeLinecap": "round",
-                    "strokeLinejoin": "round",
-                    "strokeWidth": 1,
-                  }
-                }
-                vectorEffect="non-scaling-stroke"
-                x1={280.1178203240059}
-                x2={280.1178203240059}
-                y1={300}
-                y2={305}
-              />
               <text
                 direction="inherit"
                 dx={0}
-                dy={10.26}
+                dy={11.969999999999999}
                 id="chart-axis-2-tickLabels-4"
-                x={280.1178203240059}
-                y={313}
+                x={380.0615858352579}
+                y={261}
               >
                 <tspan
                   dx={0}
                   style={
                     Object {
-                      "fill": "#455A64",
-                      "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
-                      "fontSize": 12,
+                      "fill": "#252525",
+                      "fontFamily": "'Gill Sans', 'Gill Sans MT', 'Seravek', 'Trebuchet MS', sans-serif",
+                      "fontSize": 14,
                       "letterSpacing": "normal",
-                      "padding": 8,
+                      "padding": 10,
                       "stroke": "transparent",
-                      "strokeWidth": 0,
                     }
                   }
                   textAnchor="middle"
-                  x={280.1178203240059}
+                  x={380.0615858352579}
                 >
                   1.0
                 </tspan>
@@ -820,7 +429,7 @@ exports[`EnergyMonitor should render correctly 1`] = `
           }
         >
           <svg
-            height={350}
+            height={300}
             style={
               Object {
                 "height": "auto",
@@ -828,8 +437,8 @@ exports[`EnergyMonitor should render correctly 1`] = `
                 "width": "100%",
               }
             }
-            viewBox="0 0 350 350"
-            width={350}
+            viewBox="0 0 450 300"
+            width={450}
           />
         </div>
       </div>

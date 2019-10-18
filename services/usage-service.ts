@@ -42,12 +42,10 @@ export const calculateUsage = (readings: MeterReading[]) => {
 
   usage.push({
     energyUsage: Math.floor(difference / amount),
-    // TODO fixed these reference error
+    // TODO fixed these reference errors
     date: toFriendlyDate(nextMonth(new Date(Date.parse(lastDate)))),
     label: 'Next month',
   })
-
-  console.log(usage)
 
   return usage
 }

@@ -24,11 +24,16 @@ $ yarn deploy
 # www.now.sh
 ```
 
-#### GitHub Action
+#### GitHub Actions
 
 I added a GitHub action to build/test/lint the project and will deploy it to Now.sh if everything passes!
 Check it out: https://energy-usage.harrymt.now.sh/
 
+#### TODO
+
+- Basic Cypress tests for e2e tests
+- Acceptance test for the endpoints
+- Unit tests for estimate usage algorithm
 
 
 Based on a starting template for React, NextJS, TypeScript: https://github.com/alepacheco/landing-template

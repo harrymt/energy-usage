@@ -10,14 +10,16 @@ describe('data', () => {
 
   it('initialize should create the database schema without errors', done => {
     database.createTables()
+
     const allSql = database.connection.prepare(
       `SELECT * FROM ${database.TABLE}`,
     )
     database.connection.transaction(() => {
       const selectResult = allSql.all()
       expect(selectResult).to.have.length(0)
-      done()
     })
+  
+    done()
   })
 
   it('seed data should import the data from the seedData file', done => {
@@ -27,7 +29,6 @@ describe('data', () => {
     )
 
     const selectResult = allSql.all()
-    console.log(selectResult)
 
     expect(selectResult).to.have.length(seedData.electricity.length)
     selectResult.forEach((row, index) => {
